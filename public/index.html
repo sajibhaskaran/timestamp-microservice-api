@@ -11,15 +11,17 @@
       <h1>Timestamp Microservice API</h1>
     </div>
     <div>
-      <h2>What is this?</h2>
-      <p>
-        This is a microservice API project for Free Code Camp that will accept either a human
-        readable date or a unix formatted date and return a json response with the date formatted
-        as both. If the input is neither it will return <code>null</code> values.
-      </p>
+      <h2>User stories:</h2>
+      
+      
+    <pre>1) I can pass a string as a parameter, and it will check to see whether that string contains 
+        either a unix timestamp or a natural language date (example: January 1, 2016)
+2) If it does, it returns both the Unix timestamp and the natural language form of that date.
+3) If it does not contain a date or Unix timestamp, it returns <code>null</code> for those properties.
+      </pre>
       <h3>Usage:</h3>
-      <pre>https://timestamp_microservice_api.herokuapp.com/August 20, 2016</pre>
-      <pre>https://timestamp_microservice_api.herokuapp.com/1471701715</pre>
+      <pre>https://aqueous-tor-13950.herokuapp.com/August 20, 2016</pre>
+      <pre>https://aqueous-tor-13950.herokuapp.com/1471701715</pre>
       <h3>Example Response:</h3>
 <pre>{
   normal: "August 20, 2016",

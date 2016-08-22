@@ -14,6 +14,12 @@ app.get('/:timestamp', (req, res) =>{
      if (!time.isValid())
     time = moment.unix(req.params.timestamp);
     
+    if (!time.isValid()){
+        res.json({
+            normal: null,
+            unix: null
+        })
+    }
     res.json({
         normal: time.format('MMMM DD, YYYY'),
         unix: time.format('X')
