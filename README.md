@@ -15,7 +15,7 @@ https://aqueous-tor-13950.herokuapp.com/1471701715
 ### Sample Output
 
 {
-  humanReadable: "August 20, 2016",
+  normal: "August 20, 2016",
   unix: "1471701715"
 }
 
